@@ -2,5 +2,4 @@
 Site para meu Portfólio 
 
 ## Tarefas
-
-o cintrole das tarefas desse projeto será realizado no GitHub
+o controle das tarefas desse projeto será realizado no GitHub
