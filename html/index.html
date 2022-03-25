@@ -29,7 +29,7 @@
                         <a href="#">sobre</a>
                     </li>
                     <li>
-                        <a href="#">Contatos</a>
+                        <a href="#form">Contatos</a>
                     </li>
                     <li>
                         <a href="##">fotos</a>
@@ -42,7 +42,31 @@
                 <img src="../imagem/PicsArt_05-09-09.19.14.png" alt="" />
             </div>
             <div id="teste">
-                <h1>pla</h1>
+                <form id="form" action="https://formsubmit.co/alessandro.antunesilva@gmail.com" method="POST">
+                    <h3>Entre em Contato</h3>
+
+                    <label>
+                        Nome
+                        <input type="text" name="Nome" placeholder="Digite seu Nome" required />
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="Digite seu email" required />
+                    </label>
+
+                    <label>
+                        WhatsApp
+                        <input type="tel" name="telefone" placeholder="Digite seu Número" required />
+                    </label>
+
+                    <label>
+                        Fale conosco
+                        <textarea name="info" placeholder="Qual sua dúvida"></textarea>
+                    </label>
+
+                    <button type="submit" target="blank">Enviar</button>
+                </form>
             </div>
         </main>
     </div>

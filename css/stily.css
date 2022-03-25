@@ -24,6 +24,7 @@ header {
     background: rgb(35, 35, 35);
     overflow: hidden;
     top: 0;
+    position: fixed !important;
 }
 
 #logo a {
@@ -42,7 +43,6 @@ header {
 #menu {
     display: flex;
     gap: .5rem;
-  
 }
 
 #menu a {
@@ -59,12 +59,13 @@ header {
     border: 2px solid #CCA05F;
     border-radius: 5px;
     padding-left: 5px;
-    transition: .3s;
+    transition: .5s;
 
 }
 
 #btn-menu {
     display: none;
+  
 }
 
 #main{
@@ -76,8 +77,8 @@ header {
 
 
 #img-wrapper { 
-    width: 100%;
-    height: 500px;
+    width: 600px;
+    height: 90vh;
     background:#fff;
     
    
@@ -91,16 +92,55 @@ header {
 }
 
 #teste{
-    background: #000000;
-    width: 100%;;
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+    
+}
+
+#form{
+    top: 120px;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position:relative;
+    bottom:70px;
+}
+
+#form h3{
+    font-family:"Montserrat";
+    font-weight: bold;
+    font-size:1.3rem;
+    text-align: center;
+}
+
+#form input{
+    width: 250px;
+    height:40px;
+    display: block;
+    background:#f9f9f9;
+    border-radius: 5px;
+    margin-bottom:20px;
+    padding-left: 10px;
+    font-family:"Montserrat";
+    border: 1px solid rgba(0, 0, 0, 0.2); ;
+    border-radius: 5px;
+}
+
+#form label{
+    font-size: 14px;
+    color: #252b42;
+    font-family:"Montserrat";
+    
 }
 
 @media(max-width:600px) {
 
     #menu {
         display: block;
-        position: absolute;
+        position:absolute;
         width: 100%;
         height: 0px;
         transition: .6s;
@@ -110,6 +150,7 @@ header {
         z-index: 20000;
         visibility: hidden;
         overflow-y: hidden;
+        position: fixed;
 
 
     }
@@ -142,6 +183,7 @@ header {
         border: none;
         cursor: pointer;
         gap: .5rem;
+        position: relative;
     }
 
     #hamburg {
